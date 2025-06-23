@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test2" : "react-scripts test --verbose",
-    "test3": "react-scripts test --testPathPattern=src/pages/Home/index",
+    "testintegration": "react-scripts test --testPathPattern=src/pages/Home/index",
+    "testunitaire": "react-scripts test --testPathPattern=src/helpers/Date/index",
     "lint": "eslint .eslintrc.js ./src",
     "format": "prettier ./src --write"
   },
