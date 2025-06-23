@@ -22,7 +22,8 @@
     "test": "react-scripts test",
     "test2" : "react-scripts test --verbose",
     "testintegration": "react-scripts test --testPathPattern=src/pages/Home/index",
-    "testunitaire": "react-scripts test --testPathPattern=src/helpers/Date/index",
+    "testunidate": "react-scripts test --testPathPattern=src/helpers/Date/index",
+    "testuniicon": "react-scripts test --testPathPattern=src/components/Icon/index",
     "lint": "eslint .eslintrc.js ./src",
     "format": "prettier ./src --write"
   },
