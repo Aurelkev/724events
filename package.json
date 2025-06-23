@@ -20,6 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test2" : "react-scripts test --verbose",
+    "test3": "react-scripts test --testPathPattern=src/pages/Home/index",
     "lint": "eslint .eslintrc.js ./src",
     "format": "prettier ./src --write"
   },

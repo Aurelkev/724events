@@ -24,21 +24,24 @@ describe("When Form is created", () => {
       await screen.findByText("Message envoyé !");
     });
   });
-
 });
 
-
 describe("When a page is created", () => {
-  it("a list of events is displayed", () => {
-    // to implement
-  })
-  it("a list a people is displayed", () => {
-    // to implement
-  })
+  it("a list of events is displayed", async () => {
+    render(<Home />);
+    expect(screen.getAllByText("Nos réalisations").length).toBeGreaterThan(0);
+  });
+  it("a list of people is displayed", () => {
+    render(<Home />);
+    expect(screen.getAllByText("Notre équipe").length).toBeGreaterThan(0);
+    expect(screen.getByText("Samira")).toBeInTheDocument();
+  });
   it("a footer is displayed", () => {
-    // to implement
-  })
+    render(<Home />);
+    expect(screen.getByText("Notre derniére prestation")).toBeInTheDocument();
+    expect(screen.getByText("Contactez-nous")).toBeInTheDocument();
+  });
   it("an event card, with the last event, is displayed", () => {
     // to implement
-  })
+  });
 });
